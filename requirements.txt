@@ -1,0 +1,5 @@
+# Exact solvers (run with python3, not PyPy):
+ortools>=9.8
+# Terminal display for tz_solver_pc6.py, tz_explorer.py (run these with pypy3 for speed;
+# install blessed for PyPy too:  pypy3 -m pip install blessed):
+blessed>=1.20

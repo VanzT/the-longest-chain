@@ -1,0 +1,244 @@
+TWILIGHT ZONE EPISODE CHAIN — 118 EPISODES (RASPBERRY PI)
+=========================================================
+Episodes in chain : 118
+Origin            : Raspberry Pi 4, tz_solver_pi.py, after ~7 days (555,909 s uptime, ~2.14 billion DFS calls)
+Verified          : against tz_cast_normalized.csv
+
+Each episode links to the next via the named actor.
+No episode or bridging actor repeats.
+
+  1. I Shot an Arrow into the Air
+       └─[ Edward Binns ]
+  2. The Long Morrow
+       └─[ Robert Lansing ]
+  3. A Kind of a Stopwatch
+       └─[ Robert McCord ]
+  4. A Hundred Yards Over the Rim
+       └─[ Cliff Robertson ]
+  5. The Dummy
+       └─[ Sandra Warner ]
+  6. A Nice Place to Visit
+       └─[ Stafford Repp ]
+  7. Nick of Time
+       └─[ Patricia Breslin ]
+  8. No Time Like the Past
+       └─[ Malcolm Atterbury ]
+  9. Mr. Denton on Doomsday
+       └─[ Arthur Batanides ]
+ 10. The Mirror
+       └─[ Lee Marvin ]
+ 11. Steel
+       └─[ Joe Mantell ]
+ 12. Nervous Man in a Four Dollar Room
+       └─[ William D. Gordon ]
+ 13. The Eye of the Beholder
+       └─[ Donna Douglas ]
+ 14. Cavender Is Coming
+       └─[ Sandra Gould ]
+ 15. What's in the Box
+       └─[ Douglas Bank ]
+ 16. I Am the Night - Color Me Black
+       └─[ Ivan Dixon ]
+ 17. The Big Tall Wish
+       └─[ Henry Scott ]
+ 18. The Thirty-Fathom Grave
+       └─[ Lee Kinsolving ]
+ 19. Black Leather Jackets
+       └─[ Wayne Heffley ]
+ 20. The Odyssey of Flight 33
+       └─[ Paul Comi ]
+ 21. People Are Alike All Over
+       └─[ Herbert Winters ]
+ 22. Nightmare at 20,000 Feet
+       └─[ David Armstrong ]
+ 23. The Mind and the Matter
+       └─[ Chet Stratton ]
+ 24. Miniature
+       └─[ Barney Phillips ]
+ 25. The Fever
+       └─[ Art Lewis ]
+ 26. A Most Unusual Camera
+       └─[ Adam Williams ]
+ 27. The Hitch-Hiker
+       └─[ George Mitchell ]
+ 28. The Brain Center at Whipple's
+       └─[ Ted de Corsia ]
+ 29. The Sixteen-Millimeter Shrine
+       └─[ Martin Balsam ]
+ 30. The New Exhibit
+       └─[ Milton Parsons ]
+ 31. Once Upon a Time
+       └─[ Harry Fleer ]
+ 32. The Obsolete Man
+       └─[ Josip Elic ]
+ 33. One More Pallbearer
+       └─[ Katherine Squire ]
+ 34. In His Image
+       └─[ H.M. Wynant ]
+ 35. The Howling Man
+       └─[ Ezelle Poule ]
+ 36. The Last Rites of Jeff Myrtlebank
+       └─[ Jon Lormer ]
+ 37. The Grave
+       └─[ James Best ]
+ 38. Jess-Belle
+       └─[ Virginia Gregg ]
+ 39. The Masks
+       └─[ Milton Selzer ]
+ 40. Hocus-Pocus and Frisby
+       └─[ Dabbs Greer ]
+ 41. Valley of the Shadow
+       └─[ King Calder ]
+ 42. The Trouble with Templeton
+       └─[ George Boyce ]
+ 43. Elegy
+       └─[ Kevin Hagen ]
+ 44. You Drive
+       └─[ Edward Andrews ]
+ 45. Third from the Sun
+       └─[ Joe Maross ]
+ 46. The Little People
+       └─[ Claude Akins ]
+ 47. The Monsters Are Due on Maple Street
+       └─[ Jack Weston ]
+ 48. The Bard
+       └─[ John McGiver ]
+ 49. Sounds and Silences
+       └─[ Michael Fox ]
+ 50. Nightmare as a Child
+       └─[ Morgan Brittany ]
+ 51. Caesar and Me
+       └─[ Ann Jillian ]
+ 52. Mute
+       └─[ Bill Erwin ]
+ 53. Will the Real Martian Please Stand Up?
+       └─[ John Hoyt ]
+ 54. The Lateness of the Hour
+       └─[ Mary Gregory ]
+ 55. The Shelter
+       └─[ Jo Helton ]
+ 56. On Thursday We Leave for Home
+       └─[ Lew Gallo ]
+ 57. The Rip Van Winkle Caper
+       └─[ Oscar Beregi Jr. ]
+ 58. Deaths-Head Revisited
+       └─[ Joseph Schildkraut ]
+ 59. The Trade-Ins
+       └─[ Theodore Marcuse ]
+ 60. To Serve Man
+       └─[ Jerry Fujikawa ]
+ 61. A Quality of Mercy
+       └─[ Albert Salmi ]
+ 62. Execution
+       └─[ Russell Johnson ]
+ 63. Back There
+       └─[ Raymond Bailey ]
+ 64. Escape Clause
+       └─[ Nesdon Booth ]
+ 65. The Prime Mover
+       └─[ William Keene ]
+ 66. The Midnight Sun
+       └─[ Juney Ellis ]
+ 67. What You Need
+       └─[ William Edmonson ]
+ 68. Shadow Play
+       └─[ Chet Brandenburg ]
+ 69. A World of Difference
+       └─[ David White ]
+ 70. I Sing the Body Electric
+       └─[ Vaughn Taylor ]
+ 71. Time Enough at Last
+       └─[ Burgess Meredith ]
+ 72. Mr. Dingle, the Strong
+       └─[ Harold J. Stone ]
+ 73. A World of His Own
+       └─[ Mary LaRoche ]
+ 74. Living Doll
+       └─[ Tracy Stratford ]
+ 75. Little Girl Lost
+       └─[ Charles Aidman ]
+ 76. And When the Sky Was Opened
+       └─[ Sue Randall ]
+ 77. From Agnes - with Love
+       └─[ Don Keefer ]
+ 78. It's a Good Life
+       └─[ Billy Mumy ]
+ 79. Long Distance Call
+       └─[ Philip Abbott ]
+ 80. The Parallel
+       └─[ William Sargent ]
+ 81. Ninety Years Without Slumbering
+       └─[ Ed Wynn ]
+ 82. One for the Angels
+       └─[ Gene Coogan ]
+ 83. The Old Man in the Cave
+       └─[ John Marley ]
+ 84. Kick the Can
+       └─[ Marjorie Bennett ]
+ 85. The Chaser
+       └─[ Patricia Barry ]
+ 86. I Dream of Genie
+       └─[ Loring Smith ]
+ 87. The Whole Truth
+       └─[ S. John Launer ]
+ 88. The Purple Testament
+       └─[ Dick York ]
+ 89. A Penny for Your Thoughts
+       └─[ Cyril Delevanti ]
+ 90. The Silence
+       └─[ Liam Sullivan ]
+ 91. The Changing of the Guard
+       └─[ Russell Horton ]
+ 92. In Praise of Pip
+       └─[ Jack Klugman ]
+ 93. Death Ship
+       └─[ Mary Webster ]
+ 94. A Passage for Trumpet
+       └─[ John Anderson ]
+ 95. Of Late I Think of Cliffordville
+       └─[ Hugh Sanders ]
+ 96. Judgment Night
+       └─[ Nehemiah Persoff ]
+ 97. The Four of Us Are Dying
+       └─[ Don Gordon ]
+ 98. The Self-Improvement of Salvadore Ross
+       └─[ J. Pat O'Malley ]
+ 99. Mr. Garrity and the Graves
+       └─[ John Dehner ]
+100. The Lonely
+       └─[ James Turley ]
+101. Showdown with Rance McGrew
+       └─[ Arch Johnson ]
+102. Static
+       └─[ Stephen Talbot ]
+103. The Fugitive
+       └─[ Wesley Lau ]
+104. Twenty-Two
+       └─[ Fredd Wayne ]
+105. The Arrival
+       └─[ Bing Russell ]
+106. Ring-A-Ding Girl
+       └─[ Hank Patterson ]
+107. Come Wander with Me
+       └─[ Warren Oates ]
+108. The 7th Is Made Up of Phantoms
+       └─[ Lew Brown ]
+109. A Thing About Machines
+       └─[ Jay Overholts ]
+110. The Jungle
+       └─[ Jay Adler ]
+111. He's Alive
+       └─[ Paul Mazursky ]
+112. The Gift
+       └─[ Vladimir Sokoloff ]
+113. Dust
+       └─[ Andrea Darvi ]
+114. The Night of the Meek
+       └─[ Steve Carruthers ]
+115. Where Is Everybody?
+       └─[ John Conwell ]
+116. The After Hours
+       └─[ Lee Philips ]
+117. Passage on the Lady Anne
+       └─[ Gladys Cooper ]
+118. Night Call

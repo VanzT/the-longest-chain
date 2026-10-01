@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+# run-time files written by the programs
+tz_checkpoint_*.json
+tz_checkpoint_*.json.bak-*
+tz_checkpoint_*.json.tmp
+tz_best_chain_*.txt
+tz_chain_optimal.txt
+tz_all_optimal_chains*.txt
+tz_estimate_walks.txt
+set*.log
+# IMDb downloads
+*.tsv.gz
+# built from your own IMDb files; not redistributed (see DATA.md)
+tz_cast_normalized.csv
