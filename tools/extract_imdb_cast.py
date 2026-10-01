@@ -36,8 +36,17 @@ Notes:
 import argparse, csv, gzip, os, sys
 
 
+def find(folder, name):
+    """IMDb file in folder: name.tsv.gz, or the unzipped name.tsv."""
+    for n in (name + ".tsv.gz", name + ".tsv"):
+        if os.path.exists(os.path.join(folder, n)):
+            return os.path.join(folder, n)
+    return None
+
+
 def rows(path):
-    with gzip.open(path, "rt", encoding="utf-8", newline="") as f:
+    opener = gzip.open if path.endswith(".gz") else open
+    with opener(path, "rt", encoding="utf-8", newline="") as f:
         header = f.readline().rstrip("\n").split("\t")
         for line in f:
             yield dict(zip(header, line.rstrip("\n").split("\t")))
@@ -51,32 +60,35 @@ def main():
     ap.add_argument("--exclude", action="append", default=[], help="person to leave out (repeatable)")
     args = ap.parse_args()
 
-    need = ["title.episode.tsv.gz", "title.basics.tsv.gz", "title.principals.tsv.gz", "name.basics.tsv.gz"]
-    for n in need:
-        if not os.path.exists(os.path.join(args.dir, n)):
-            sys.exit(f"Missing {n} in {os.path.abspath(args.dir)}")
+    need = ["title.episode", "title.basics", "title.principals", "name.basics"]
+    files = {n: find(args.dir, n) for n in need}
+    missing = [n + ".tsv.gz" for n, f in files.items() if not f]
+    if missing:
+        sys.exit(f"Missing {', '.join(missing)} in {os.path.abspath(args.dir)}\n"
+                 f"Download them from https://datasets.imdbws.com/ into that folder "
+                 f"(or point --dir / --imdb-dir at the folder that has them).")
 
     print("1/4 finding episodes...")
-    episodes = {r["tconst"] for r in rows(os.path.join(args.dir, "title.episode.tsv.gz"))
+    episodes = {r["tconst"] for r in rows(files["title.episode"])
                 if r.get("parentTconst") == args.series}
     if not episodes:
         sys.exit(f"No episodes found for {args.series}. Check the ID.")
     print(f"    {len(episodes)} episodes")
 
     print("2/4 reading episode titles...")
-    title = {r["tconst"]: r["primaryTitle"] for r in rows(os.path.join(args.dir, "title.basics.tsv.gz"))
+    title = {r["tconst"]: r["primaryTitle"] for r in rows(files["title.basics"])
              if r["tconst"] in episodes}
 
     print("3/4 reading cast...")
     keep = {"actor", "actress", "self"}
     links = set()
-    for r in rows(os.path.join(args.dir, "title.principals.tsv.gz")):
+    for r in rows(files["title.principals"]):
         if r["tconst"] in episodes and r.get("category") in keep:
             links.add((r["nconst"], r["tconst"]))
     people = {n for n, _ in links}
 
     print("4/4 reading names...")
-    name = {r["nconst"]: r["primaryName"] for r in rows(os.path.join(args.dir, "name.basics.tsv.gz"))
+    name = {r["nconst"]: r["primaryName"] for r in rows(files["name.basics"])
             if r["nconst"] in people}
 
     excluded = set(args.exclude)

@@ -63,14 +63,18 @@ def imdb_rows(imdb_dir):
     with tempfile.TemporaryDirectory() as tmp:
         raw = os.path.join(tmp, "imdb_raw.csv")
         norm = os.path.join(tmp, "imdb_norm.csv")
-        subprocess.run([sys.executable, os.path.join(HERE, "extract_imdb_cast.py"), SERIES,
-                        "--dir", imdb_dir, "--out", raw], check=True)
+        if subprocess.run([sys.executable, os.path.join(HERE, "extract_imdb_cast.py"), SERIES,
+                           "--dir", imdb_dir, "--out", raw]).returncode != 0:
+            sys.exit("Stopped: couldn't read the IMDb files (see the message above).")
         subprocess.run([sys.executable, os.path.join(HERE, "normalize_cast.py"), raw,
                         "--aliases", ALIASES, "--out", norm], check=True)
         return read_rows(norm)
 
 
 def prepare(args):
+    if not os.path.exists(args.cast):
+        sys.exit(f"Can't find {os.path.abspath(args.cast)}. Run this from the top folder "
+                 f"of the repository, or give the full path to --cast.")
     final = read_rows(args.cast)
     imdb = imdb_rows(args.imdb_dir)
     actors = sorted({a for a, _ in final})
